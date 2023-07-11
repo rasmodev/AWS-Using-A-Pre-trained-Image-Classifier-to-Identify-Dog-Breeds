@@ -1,5 +1,5 @@
 # Image Classification for a City Dog Show
-This project focused on using a pre-trained image classifier to identify dog breeds. The goal of the project was to improve programming skills using Python. The project required the implementation of Python tools to utilize the provided classifier.
+This project is part of the AWS ML & AI Programming with Python Nanodegree Scholarship Program. The goal of this project is to use a pre-trained image classifier to identify different dog breeds.
 
 # Project Goal
 The main objective of this project was to enhance programming skills by working with Python. By utilizing a pre-trained image classifier, the project aimed to identify dog breeds effectively.
