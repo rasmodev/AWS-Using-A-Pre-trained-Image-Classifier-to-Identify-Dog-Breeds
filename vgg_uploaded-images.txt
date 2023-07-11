@@ -1,0 +1,77 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Cat_01.jpg  label:                        cat
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:               Black_cap_01.jpg  label:                  black cap
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+ NOT A MATCH:
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:                           lynx
+
+              Black_cap_01.jpg: 
+Real:                  black cap   Classifier:      bathing cap, swimming cap
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:                           lynx  
+PetLabelDog: 0  ClassLabelDog: 0
+
+              Black_cap_01.jpg: 
+Real:                  black cap   Classifier:      bathing cap, swimming cap  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+Summary of Results:
+ - CNN Model Architecture: in_arg.arch
+ - Total Images: 4
+ - Dog Images: 2
+ - Not-a-Dog Images: 2
+ - Correct Match: 2 (50.00%)
+ - Correct Dog Breed: 0 (0.00%)
+ - Correctly Classified Dogs: 2 (100.00%)
+ - Correctly Classified Not-a-Dog: 2 (100.00%)
+
+Incorrectly Classified Dogs:
+
+Incorrectly Classified Dog Breeds:
+ - Pet Image: Dog_02.jpg - Pet Label: dog - Classifier Label: german shepherd, german shepherd dog, german police dog, alsatian
+ - Pet Image: Dog_01.jpg - Pet Label: dog - Classifier Label: german shepherd, german shepherd dog, german police dog, alsatian
+
+** Total Elapsed Runtime: 0:0:8
