@@ -3,28 +3,21 @@ Questions regarding Uploaded Image Classification:
 1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
 
 Answer: 
-Yes, all three model architectures classified the breed of dog in Dog_01.jpg to be the same breed, which is "german shepherd, german shepherd dog, german police dog, alsatian."
-ResNet: Classified as "german shepherd, german shepherd dog, german police dog, alsatian"
-VGG: Classified as "german shepherd, german shepherd dog, german police dog, alsatian"
-AlexNet: Classified as "german shepherd, german shepherd dog, german police dog, alsatian"
+Yes. The three model architectures (alexnet, resnet, vgg) classified the breed of dog in Dog_01.jpg to be the same breed. They all classified it as a German Shepherd, German Shepherd Dog, German Police Dog, or Alsatian.
 
 2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
 
 Answer: 
-Yes, each of the three model architectures classified the breed of dog in Dog_01.jpg to be the same breed as they classified Dog_02.jpg. The breed is "german shepherd, german shepherd dog, german police dog, alsatian."
-ResNet: Classified Dog_02.jpg as "german shepherd, german shepherd dog, german police dog, alsatian"
-VGG: Classified Dog_02.jpg as "german shepherd, german shepherd dog, german police dog, alsatian"
-AlexNet: Classified Dog_02.jpg as "german shepherd, german shepherd dog, german police dog, alsatian"
+Yes, each of the three model architectures classified the breed of dog in Dog_01.jpg to be the same breed as they classified Dog_02.jpg. Both images were classified as German Shepherd, German Shepherd Dog, German Police Dog, or Alsatian.
 
 3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
 
 Answer: 
-Yes, all three model architectures correctly classified to not be dogs. Animal_Name_01.jpg was classified as "cat" and Object_Name_01.jpg as "black cap."
-ResNet: Misclassified Animal_Name_01.jpg as "cat" and Object_Name_01.jpg as "black cap"
-VGG: Misclassified Animal_Name_01.jpg as "cat" and Object_Name_01.jpg as "black cap"
-AlexNet: Misclassified Animal_Name_01.jpg as "cat" and Object_Name_01.jpg as "black cap"
+Yes. The three model architectures correctly classified Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs. There were no misclassifications.
 
 4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
 
 Answer:
-Based on the results, the Resnet model architecture performed the best in classifying the four uploaded images. It correctly classified the breed of Dog_01.jpg and Dog_02.jpg as "german shepherd, german shepherd dog, german police dog, alsatian", which matched across the two images. Additionally, it correctly classified Animal_Name_01.jpg as a cat, which was a non-dog category. The Resnet model showed consistent and accurate results across the images, making it the most reliable model architecture for uploaded image classification.
+The ResNet and AlexNet model architectures performed equally well in terms of classification accuracy, producing the same outputs for the given images. However, the AlexNet model architecture is more efficient in terms of runtime, taking only 1 second compared to the VGG model architecture, which took 8 seconds.
+
+Therefore, considering both accuracy and efficiency, the AlexNet model architecture is the best choice for classifying the four uploaded images. It achieves high accuracy while utilizing fewer time resources, making it an optimal option for image classification tasks
