@@ -1,4 +1,4 @@
-# Image Classification for a City Dog Show
+# Image Classification for a City Dog Show: A CNN-based Machine Learning Approach
 This repository contains the code and resources for an image classification project which is part of the AWS ML & AI Programming with Python Nanodegree Scholarship Program. The goal of this project is to use a pre-trained image classifier to classify images into different categories, including dogs, breeds of dogs, and non-dogs.
 
 # Description
